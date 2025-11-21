@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>条件语句</title>
+<script type="text/javascript" language="javascript">
+document.write("<h1>成绩评定</h1>");
+var score=Number(prompt("请输入你的成绩:",""));  //0-100
+var leval;  //成绩评定
+//判断用户输入的数是否为数字
+//Number() parseInt() NaN
+//isNaN()判断参数是否是NaN:返回true 说明是NaN 不是一个数字 返回false 不是NaN 是数字
+if(isNaN(score))
+{
+	alert("你输入的不是数字");
+}
+else
+{
+	if(score<0 || score>100)
+	{
+		alert("你输入的成绩不在有效范围");
+	}
+	else
+	{
+		//0-100
+		//采用多分支结构来实现
+		//score:0-100  95.5 99.999
+		//score/10:0-10 9.55
+		//parseInt(score/10):0-10 9
+		switch(parseInt(score/10))
+		{
+			case 10:
+			case 9: 
+				leval="优秀";
+				break;
+			case 8:
+				leval="良好";
+				break;
+			case 7:
+				leval="中等";
+				break;
+			case 6:
+				leval="及格";
+				break;
+			default:
+				leval="不及格";
+				break;
+		}
+		document.write("<h2>你的成绩评定为："+leval+"</h2>");
+
+	}
+}
+
+
+</script>
+</head>
+
+<body>
+</body>
+</html>

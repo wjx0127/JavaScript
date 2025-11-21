@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>手风琴动画效果</title>
+    <style>
+      body {
+        width: 100%;
+      }
+      div.container {
+        width: 70%;
+        margin: 0 auto;
+        border-radius: 20px;
+      }
+      button.accordion {
+        background-color: rgb(253, 245, 175);
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+      button.accordion:active,
+      button.accordion:hover {
+        background-color: rgb(255, 199, 166);
+      }
+      div.panel {
+        padding: 0 18px;
+        background-color: rgb(252, 250, 232);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>北京冬奥会感受墙</h2>
+      <p>点击以下选项显示折叠内容</p>
+
+      <button class="accordion">筑梦冰雪，热盼冬奥</button>
+      <div class="panel">
+        <p>
+          2020年如同一列伤痕累累的列车在时代的轨道上留下了深深的痕迹，每个人都身在其中，病疫之际，各国同舟共济，众志成城，人类命运共同体的含义尽显其中。得见今日破冰之下，春暖花开。
+          2015年7月31日下午，亿万中国观众屏住呼吸，期待着2022冬奥会举办地结果的揭晓，当国际奥委会主席巴赫宣布“北京”时，神州大地2020年如同一列伤痕累累的列车在时代的轨道上留下了深深的痕迹，每个人都身在其中，病疫之际，各国同舟共济，众志成城，人类命运共同体的含义尽显其中。得见今日破冰之下，春暖花开。
+          2015年7月31日下午，亿万中国观众屏住呼吸，期待着2022冬奥会举办地结果的揭晓，当国际奥委会主席巴赫宣布“北京”时，神州大地2020年如同一列伤痕累累的列车在时代的轨道上留下了深深的痕迹，每个人都身在其中，病疫之际，各国同舟共济，众志成城，人类命运共同体的含义尽显其中。得见今日破冰之下，春暖花开。
+          2015年7月31日下午，亿万中国观众屏住呼吸，期待着2022冬奥会举办地结果的揭晓，当国际奥委会主席巴赫宣布“北京”时，神州大地2020年如同一列伤痕累累的列车在时代的轨道上留下了深深的痕迹，每个人都身在其中，病疫之际，各国同舟共济，众志成城，人类命运共同体的含义尽显其中。得见今日破冰之下，春暖花开。
+          2015年7月31日下午，亿万中国观众屏住呼吸，期待着2022冬奥会举办地结果的揭晓，当国际奥委会主席巴赫宣布“北京”时，神州大地2020年如同一列伤痕累累的列车在时代的轨道上留下了深深的痕迹，每个人都身在其中，病疫之际，各国同舟共济，众志成城，人类命运共同体的含义尽显其中。得见今日破冰之下，春暖花开。
+          2015年7月31日下午，亿万中国观众屏住呼吸，期待着2022冬奥会举办地结果的揭晓，当国际奥委会主席巴赫宣布“北京”时，神州大地2020年如同一列伤痕累累的列车在时代的轨道上留下了深深的痕迹，每个人都身在其中，病疫之际，各国同舟共济，众志成城，人类命运共同体的含义尽显其中。得见今日破冰之下，春暖花开。
+          2015年7月31日下午，亿万中国观众屏住呼吸，期待着2022冬奥会举办地结果的揭晓，当国际奥委会主席巴赫宣布“北京”时，神州大地翘首以待的亿万中国人沸腾了！如同14年前北京获得2008年奥运会承包权时一样，中国人民在这一刻都沉浸在忘我的兴奋状态之中。
+        </p>
+      </div>
+
+      <button class="accordion">相约冰雪，共迎冬奥</button>
+      <div class="panel">
+        <p>
+          北京冬奥会开幕倒计时一年了！新闻媒体、朋友圈、微信群里洋溢着欢声笑语，大家纷纷畅谈对2022年冬奥会的期盼。2008年的北京夏季奥运会的盛况仿佛就在昨天，那时候我还是一名大学三年级的学生。不曾想，转眼间2022年冬奥会已走近我们的身边，如今，我已是一个孩子的妈妈。时光荏苒，变的是年龄和岁月，不变的是对奥运会的强烈期盼。
+          北京冬奥会倒计时一周年活动在国家游泳中心“冰立方”举行。冬奥会和冬残奥会的火炬外观设计对外发布。火炬是展示奥运精神和中国特色文化的重要载体，薪火相传的奥林匹克精神，正是在火炬的传递过程中被继承和发扬。2022年冬奥会火炬的名字为“飞扬”，放飞体育梦想，激扬奋斗热情。
+        </p>
+      </div>
+
+      <button class="accordion">全民冬奥，一起向未来！</button>
+      <div class="panel">
+        <p>
+          有一种火焰起于繁华之中，经几万里山河不灭，传递着和平的信仰，点燃着成功的希望；有一种竞技蔓延于和平之时，经数万次胜负不愠，传递着坚持不懈的精神，歌唱着棋逢对手的佳话。奥林匹克运动将乐观坚强的奥运精神传播到五湖四海。2015年7月31日，在祖国不懈的努力下，在14亿人民的期盼中，2022冬奥会申办成功，北京光荣地成为“双奥”城市。
+          伴随着申奥成功的，是紧张刺激的申办答辩，是为了营造合适比赛环境而夜以继日的人工造雪，是本着绿色、共享、开放、廉洁的原则精心设计的奥运场馆。无数的中华儿女为了冬奥会的顺利举办，为了中华民族的荣誉，努力奋斗，成功建立了北京—张家口—延庆赛场。
+        </p>
+      </div>
+    </div>
+    <script>
+      var acc = document.querySelectorAll(".accordion");
+      for (var i = 0; i < acc.length; i++) {
+        acc[i].onclick = function () {
+          // 为选项切换添加 active
+          this.classList.toggle("active");
+          // 通过nextElementSibling获取样式为panel的div
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        };
+      }
+    </script>
+  </body>
+</html>
